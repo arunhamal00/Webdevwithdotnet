@@ -1,12 +1,41 @@
-﻿@page
+﻿﻿@page
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
-@for (int i = 0; i < 10; i++){
+
+@for(int i=0; i<10; i++)
+{
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 }
+
+@* 1. print numbers from 1 to 1000*@
+
+@for (int i = 1; i <= 1000; i++)
+{
+    @i if (i < 1000)
+    {
+        @Html.Raw(", ")
+    }
+}
+
+
+@* 2. print multiplication table for 45  *@
+
+
+
+<table border="1">
+    <tr>
+        <th><b>Multiplication table of 45</b></th>
+    </tr>
+    @for (int i = 1; i <= 10; i++)
+    {
+        <tr>
+            <td style="text-align: center;">45*@i = @(45*i)</td>
+        </tr>
+    }
+</table>
