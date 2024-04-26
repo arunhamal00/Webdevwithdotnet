@@ -1,0 +1,26 @@
+@page "/courses"
+@model CoursesModel
+
+<h2>List of all courses</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Textbook</th>
+      <th scope="col">Credit Hours</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach(var course in Model.Courses)
+    {
+        <tr>
+            <th scope="row">1</th>
+            <td>@course.Name</td>
+            <td>@course.TextBook</td>
+            <td>@course.CreditHrs</td>           
+        </tr>   
+    }    
+  </tbody>
+</table>
