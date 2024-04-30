@@ -6,22 +6,28 @@
 <table class="table">
   <thead>
     <tr>
-        <th scope="col">S/N</th>
+        <th scope="col">#</th>
       <th scope="col">Name</th>
       <th scope="col">Textbook</th>
       <th scope="col">Credit Hours</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
+    @{
+      int counter = 1;
+    }
     @foreach(var course in Model.Courses)
     {
         <tr>
-              <td>@course.Id</td>
+            <th scope="row">@(counter++)</th>
             <td>@course.Name</td>
             <td>@course.TextBook</td>
             <td>@course.CreditHrs</td>  
-             <td><a href="/edit" class="btn btn-primary"><i class="bi bi-pencil-square"></i> Edit</a>
-            <a href="" class="btn btn-danger"><i class="bi bi-archive"></i> Delete</a></td>               
+            <td>
+            <a href="/courses/edit/@course.Id"><i class="bi bi-pencil-square text-warning"></i></a>
+            <a href="/courses/delete/@course.Id"><i class="bi bi-archive text-danger"></i></a>
+            </td>               
         </tr>    
     }    
   </tbody>
