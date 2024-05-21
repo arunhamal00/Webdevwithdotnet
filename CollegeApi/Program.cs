@@ -15,17 +15,5 @@ app.MapPost("/courses", (Course course, CollegeDbContext db) =>
     db.Courses.Add(course);
     db.SaveChanges();
 });
-app.MapPut("/courses", (Course course, CollegeDbContext db) =>
-{
-    db.Courses.Update(course);
-    db.SaveChanges();
-});
-app.MapDelete("/courses", (Course course, CollegeDbContext db) =>
-{
-    db.Courses.Delete(course);
-    db.SaveChanges();
-});
-
-
 
 app.Run();
