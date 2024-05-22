@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollegeApi", "CollegeApi\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollegeMonitor", "CollegeMonitor\CollegeMonitor.csproj", "{B12FF530-2DAB-4625-A000-09E75F012665}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "College.Infrastructure", "College.Infrastructure\College.Infrastructure.csproj", "{40E15D8F-81C6-4DF2-99BB-D880CB6EC0FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B12FF530-2DAB-4625-A000-09E75F012665}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B12FF530-2DAB-4625-A000-09E75F012665}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B12FF530-2DAB-4625-A000-09E75F012665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40E15D8F-81C6-4DF2-99BB-D880CB6EC0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40E15D8F-81C6-4DF2-99BB-D880CB6EC0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40E15D8F-81C6-4DF2-99BB-D880CB6EC0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40E15D8F-81C6-4DF2-99BB-D880CB6EC0FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
