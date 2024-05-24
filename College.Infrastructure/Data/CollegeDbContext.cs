@@ -5,6 +5,6 @@ public class CollegeDbContext : DbContext
     public DbSet<Session> Sessions { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=CollegeMonitor.db");
+        optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=CollegeMonitor;Trusted_Connection=True;");
     }
 }
