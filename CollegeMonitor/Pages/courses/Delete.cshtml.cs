@@ -16,6 +16,6 @@ public class DeleteCourseModel : PageModel
       db.Courses.Remove(Course);
       db.SaveChanges();
 
-      return RedirectToPage("Courses");
+      return RedirectToPage("Course");
    }
 }
